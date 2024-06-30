@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/Alepsny/rsschool-cv/blob/gh-pages/cv.md
+<a href='https://alepsny.github.io/rsschool-cv/cv'>CV</a>
