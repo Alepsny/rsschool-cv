@@ -1,14 +1,23 @@
-<p><img src="photo_cv.jpeg" width="191" height="250" alt="photo"></p>
-<p><b>Valeria Gustyr </b></p>
-<p><b>Contacts</b> <br>
-email: v.a.gustyr@gmail.com<br>
-phone: +79291767492<br>
-telegram: alepsny<br>
-discord: alepsny_</p>
-<p>My love is to study. I want to learn new things at work</p>
-<p><b>Skills</b><br>
-Python, SQL, C++, GIT, JavaScript, HTML, CSS</p>
-<p><b>Code example</b></p><pre><code>from PIL import Image, ImageEnhance
+# Valeria Gustyr
+
+## Contacts
+
+* email: <v.a.gustyr@gmail.com>
+* phone: +79291767492
+* telegram: alepsny
+* discord: alepsny_
+
+## Summary
+
+My love is to study. I want to learn new things at work
+
+## Skills
+
+Python, SQL, C++, GIT, JavaScript, HTML, CSS
+
+## Code example
+
+```from PIL import Image, ImageEnhance
 import cv2
 
 source = 'x-ray.tiff'
@@ -29,8 +38,10 @@ im_s_1.save(final_file)
 
 img = cv2.imread(final_file)
 gas_im = cv2.GaussianBlur(img, (33, 33), 0)
-cv2.imwrite(final_file, gas_im)</code> </pre><br>
-<p><b>Education</b><br>
+cv2.imwrite(final_file, gas_im)```
+
+## Education
+
 Configuration Management and the Cloud<br>
 Automating Real-World Tasks with Python<br>
 Foundations of Project Management<br>
@@ -59,5 +70,4 @@ Crash Course on Python<br>
 Погружение в Python<br>
 Поколение Python<br>
 Разбираем процесс анализа данных
-</p>
-<p><b>English</b> intermediate</p>
+English intermediate

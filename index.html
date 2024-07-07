@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class = "header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts|</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary|</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills|</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code|</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses|</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects|</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education|</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
 
+                </ul>
+              </nav>
+        </div></header>
+    <main class = "main main-container">
+        <section class="section" id="photo">
+            <img src="../photo_cv.jpeg" width="191" height="250" alt="photo" />
+        </section>
+        <section class="section" id="profile">
+            <h1 class="section-title">Valeria Gustyr</h1>
+            <p>Junior Front-End Developer</p>
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <p>
+                <ul>
+                    <li>email: <a href="mailto:v.a.gustyr@gmail.com">v.a.gustyr@gmail.com</a></li>
+                    <li>phone: +79291767492</li>
+                    <li>telegram: <a href="https://t.me/alepsny">alepsny</a></li>
+                    <li>GitHub: <a href="https://github.com/Alepsny">alepsny</a></li>
+                    <li>dicrod: <a href="https://discordapp.com/users/1238515516247769272">alepsny_</a></li>
+                </ul>
+            </p>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>My love is to study. I want to learn new things at work.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <p>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul></p>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <p>
+                <pre>
+                    <code>
+                        from PIL import Image, ImageEnhance
+                        import cv2
+
+                        source = 'x-ray.tiff'
+                        final_file = 'final.jpg'
+
+                        img = cv2.imread(source, cv2.IMREAD_GRAYSCALE)
+                        cv2.imwrite(final_file, img)
+
+                        im = Image.open(final_file)
+                        enhancer = ImageEnhance.Brightness(im)
+                        factor = 4
+                        im_output = enhancer.enhance(factor)
+
+                        enhancer = ImageEnhance.Sharpness(im_output)
+                        factor = 2
+                        im_s_1 = enhancer.enhance(factor)
+                        im_s_1.save(final_file)
+
+                        img = cv2.imread(final_file)
+                        gas_im = cv2.GaussianBlur(img, (33, 33), 0)
+                        cv2.imwrite(final_file, gas_im)
+                    </code>
+                </pre>
+            </p>
+        </section>
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <p>
+                <ul>
+                    <li>Configuration Management and the Cloud</li>
+                    <li>Automating Real-World Tasks with Python</li>
+                    <li>Foundations of Project Management</li>
+                    <li>Foundations: Data, Data, Everywhere</li>
+                    <li>Google IT Automation with Python</li>
+                    <li>IT Security: Defense against the digital dark arts</li>
+                    <li>Introduction to Back-End Development</li>
+                    <li>Introduction to Cloud Computing</li>
+                    <li>Introduction to DevOps</li>
+                    <li>Introduction to Front-End Development</li>
+                    <li>Programming with JavaScript</li>
+                    <li>Логика</li>
+                    <li>"Поколение Python": курс для продвинутых</li>
+                    <li>Introduction to Git and GitHub</li>
+                    <li>Operating Systems and You: Becoming a Power Use</li>
+                    <li>Python: основы и применение</li>                    
+                    <li>System Administration and IT Infrastructure Services</li>
+                    <li>Technical Support Fundamentals</li>
+                    <li>The Bits and Bytes of Computer Networking</li>
+                    <li>Troubleshooting and Debugging Techniques</li>
+                    <li>Using Python to Interact with the Operating System</li>
+                    <li>Введение в дискретную математику</li>
+                    <li>Веб-разработка для начинающих: HTML и CSS</li>
+                    <li>Программирование на Python</li>
+                    <li>Crash Course on Python</li>
+                    <li>Погружение в Python</li>
+                    <li>Поколение Python</li>
+                    <li>Разбираем процесс анализа данных</li>
+                </ul>
+            </p>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <p>
+                <ul>
+                    <li><a href="https://github.com/Alepsny/PicassoTestTask">PicassoTestTask</a></li>
+                    <li><a href="https://github.com/Alepsny/x-raytest">x-raytest</a></li>
+                    <li><a href="https://github.com/Alepsny/TestTask">TestTask</a></li>
+                </ul>
+            </p>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>
+                State Marine Technical University
+            </p>
+        </section>
+        <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <p>English: intermediate</p>
+        </section>
+    </main>
+    <footer class = "footer">
+        <a href="https://github.com/Alepsny"><img src="../github_icon.png" height="50px" width="50px" alt="GitHub"></a>
+        <span>2024</span>
+        <a href="https://rs.school/courses/javascript-ru"><img src="../rs-school-logo.svg" height="50px" width="100px" alt="RS School"></a>
+    </footer>
+</body>
+</html>
