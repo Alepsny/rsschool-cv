@@ -51,91 +51,84 @@
         </section>
         <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
-            <p>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul></p>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
         </section>
         <section class="section" id="code">
             <h2 class="section-title">Code</h2>
-            <p>
-                <pre>
-                    <code>
-                        from PIL import Image, ImageEnhance
-                        import cv2
+            <pre>
+                <code>
+                    from PIL import Image, ImageEnhance
+                    import cv2
 
-                        source = 'x-ray.tiff'
-                        final_file = 'final.jpg'
+                    source = 'x-ray.tiff'
+                    final_file = 'final.jpg'
 
-                        img = cv2.imread(source, cv2.IMREAD_GRAYSCALE)
-                        cv2.imwrite(final_file, img)
+                    img = cv2.imread(source, cv2.IMREAD_GRAYSCALE)
+                    cv2.imwrite(final_file, img)
 
-                        im = Image.open(final_file)
-                        enhancer = ImageEnhance.Brightness(im)
-                        factor = 4
-                        im_output = enhancer.enhance(factor)
+                    im = Image.open(final_file)
+                    enhancer = ImageEnhance.Brightness(im)
+                    factor = 4
+                    im_output = enhancer.enhance(factor)
 
-                        enhancer = ImageEnhance.Sharpness(im_output)
-                        factor = 2
-                        im_s_1 = enhancer.enhance(factor)
-                        im_s_1.save(final_file)
+                    enhancer = ImageEnhance.Sharpness(im_output)
+                    factor = 2
+                    im_s_1 = enhancer.enhance(factor)
+                    im_s_1.save(final_file)
 
-                        img = cv2.imread(final_file)
-                        gas_im = cv2.GaussianBlur(img, (33, 33), 0)
-                        cv2.imwrite(final_file, gas_im)
-                    </code>
-                </pre>
-            </p>
+                    img = cv2.imread(final_file)
+                    gas_im = cv2.GaussianBlur(img, (33, 33), 0)
+                    cv2.imwrite(final_file, gas_im)
+                </code>
+            </pre>
         </section>
         <section class="section" id="courses">
             <h2 class="section-title">Courses</h2>
-            <p>
-                <ul>
-                    <li>Configuration Management and the Cloud</li>
-                    <li>Automating Real-World Tasks with Python</li>
-                    <li>Foundations of Project Management</li>
-                    <li>Foundations: Data, Data, Everywhere</li>
-                    <li>Google IT Automation with Python</li>
-                    <li>IT Security: Defense against the digital dark arts</li>
-                    <li>Introduction to Back-End Development</li>
-                    <li>Introduction to Cloud Computing</li>
-                    <li>Introduction to DevOps</li>
-                    <li>Introduction to Front-End Development</li>
-                    <li>Programming with JavaScript</li>
-                    <li>Логика</li>
-                    <li>"Поколение Python": курс для продвинутых</li>
-                    <li>Introduction to Git and GitHub</li>
-                    <li>Operating Systems and You: Becoming a Power Use</li>
-                    <li>Python: основы и применение</li>                    
-                    <li>System Administration and IT Infrastructure Services</li>
-                    <li>Technical Support Fundamentals</li>
-                    <li>The Bits and Bytes of Computer Networking</li>
-                    <li>Troubleshooting and Debugging Techniques</li>
-                    <li>Using Python to Interact with the Operating System</li>
-                    <li>Введение в дискретную математику</li>
-                    <li>Веб-разработка для начинающих: HTML и CSS</li>
-                    <li>Программирование на Python</li>
-                    <li>Crash Course on Python</li>
-                    <li>Погружение в Python</li>
-                    <li>Поколение Python</li>
-                    <li>Разбираем процесс анализа данных</li>
-                </ul>
-            </p>
+            <ul>
+                <li>Configuration Management and the Cloud</li>
+                <li>Automating Real-World Tasks with Python</li>
+                <li>Foundations of Project Management</li>
+                <li>Foundations: Data, Data, Everywhere</li>
+                <li>Google IT Automation with Python</li>
+                <li>IT Security: Defense against the digital dark arts</li>
+                <li>Introduction to Back-End Development</li>
+                <li>Introduction to Cloud Computing</li>
+                <li>Introduction to DevOps</li>
+                <li>Introduction to Front-End Development</li>
+                <li>Programming with JavaScript</li>
+                <li>Логика</li>
+                <li>"Поколение Python": курс для продвинутых</li>
+                <li>Introduction to Git and GitHub</li>
+                <li>Operating Systems and You: Becoming a Power Use</li>
+                <li>Python: основы и применение</li>                    
+                <li>System Administration and IT Infrastructure Services</li>
+                <li>Technical Support Fundamentals</li>
+                <li>The Bits and Bytes of Computer Networking</li>
+                <li>Troubleshooting and Debugging Techniques</li>
+                <li>Using Python to Interact with the Operating System</li>
+                <li>Введение в дискретную математику</li>
+                <li>Веб-разработка для начинающих: HTML и CSS</li>
+                <li>Программирование на Python</li>
+                <li>Crash Course on Python</li>
+                <li>Погружение в Python</li>
+                 <li>Поколение Python</li>
+                 <li>Разбираем процесс анализа данных</li>
+             </ul>
         </section>
         <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
-            <p>
-                <ul>
-                    <li><a href="https://github.com/Alepsny/PicassoTestTask">PicassoTestTask</a></li>
-                    <li><a href="https://github.com/Alepsny/x-raytest">x-raytest</a></li>
-                    <li><a href="https://github.com/Alepsny/TestTask">TestTask</a></li>
-                </ul>
-            </p>
+            <ul>
+                <li><a href="https://github.com/Alepsny/PicassoTestTask">PicassoTestTask</a></li>
+                <li><a href="https://github.com/Alepsny/x-raytest">x-raytest</a></li>
+                <li><a href="https://github.com/Alepsny/TestTask">TestTask</a></li>
+            </ul>
         </section>
         <section class="section" id="education">
             <h2 class="section-title">Education</h2>
